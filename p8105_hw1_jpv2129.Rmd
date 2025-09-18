@@ -40,8 +40,14 @@ Scatterplot:
 ```{r}
 ggplot(early_january_weather, aes(x=time_hour,y=temp, color=humid)) + geom_point() #making the scatterplot with color points for humidity
 
-ggsave("temp_vs_time_scatterplot")
+ggsave("temp_vs_time_scatterplot.png") #saving scatterplot into project directory
 ```
+
+Description of patterns in scatterplot:
+The scatterplot shows temperature changes over time in January, with color indicating humidity. Overall, temperatures fluctuate daily but gradually increase from early to mid-January, starting mostly between 25–40°F through Jan 7th and more frequently rising to 45–55°F closer to January 14. 
+
+Humidity increases with  warmer temperatures and spikes in mid-January when temperatures peak. Lower humidity values are more evenly spread and more common at cooler temperatures. 
+
 
 
 
