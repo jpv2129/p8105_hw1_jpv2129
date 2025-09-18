@@ -1,0 +1,14 @@
+---
+title: "p8105_hw1_jpv2129"
+author: "Jake Vettoretti"
+date: "2025-09-18"
+output: github_document
+---
+
+```{r}
+library(moderndive)
+data("early_january_weather")
+```
+
+
+
