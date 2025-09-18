@@ -5,10 +5,40 @@ date: "2025-09-18"
 output: github_document
 ---
 
+## Problem 1
+
+Loading the dataset
 ```{r}
+library(tidyverse)
 library(moderndive)
-data("early_january_weather")
+data("early_january_weather") #loads the dataset
 ```
+
+
+Getting the number of rows/columns in the dataset and mean temp from the dataset.
+```{r}
+nrow(early_january_weather) #gets rows
+ncol(early_january_weather) #gets columns
+mean(with(early_january_weather, temp)) #calculating the mean temp
+```
+
+Dataset description:
+There are 15 variables in the dataset.
+
+The names of the variables are: origin, year, month, day, hour, temp, dewp, humid, wind_dir, wind_speed, wind_gust, 
+precip, pressure, visib, and time_hour.
+
+The important variables seem to be temp, dewp, humid, wind_dir, wind_speed, wind_gust, 
+precip, pressure, and visib as these are the variables listed that mainly contribute to weather patterns.
+
+There are 15 columns in the dataset and 358 rows (or observations).
+
+The mean temp from the dataset is 39.58212 F.
+
+Scatterplot:
+
+
+
 
 
 
