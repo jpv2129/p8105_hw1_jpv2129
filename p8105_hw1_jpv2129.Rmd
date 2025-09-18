@@ -57,15 +57,15 @@ problem2_df = #creating my own dataframe with conditions described.
   tibble(
     randsamp = rnorm(10), # random sample of size 10 from a standard Normal distribution
     logic = rnorm(10) > 0, # a logical vector indicating whether elements of the sample are greater than 0
-    character = letters[1:10], # a character vector of length 10
-    factor = factor(rep(c("A","B","C"), length.out = 10)) # a factor vector of length 10, with 3 different factor “levels”
+    char = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j"), # a character vector of length 10
+    fac = factor(c("male", "male", "female", "female", "male", "female", "other", "other", "male", "female")) # a factor vector of length 10, with 3 different factor “levels”
   )
 
 #taking means below
 mean(problem2_df |>  pull(randsamp))    # works
 mean(problem2_df |>  pull(logic))   # works
-mean(problem2_df |>  pull(character))   # error 
-mean(problem2_df |>  pull(factor))    # error 
+mean(problem2_df |>  pull(char))   # error 
+mean(problem2_df |>  pull(fac))    # error 
 ```
 
 
