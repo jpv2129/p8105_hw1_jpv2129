@@ -62,10 +62,10 @@ problem2_df = #creating my own dataframe with conditions described.
   )
 
 #taking means below
-mean(with(problem2_df, randsamp)) 
-mean(with(problem2_df, logic))
-mean(with(problem2_df, character))
-mean(with(problem2_df, factor))
+mean(problem2_df |>  pull(randsamp))    # works
+mean(problem2_df |>  pull(logic))   # works
+mean(problem2_df |>  pull(character))   # error 
+mean(problem2_df |>  pull(factor))    # error 
 ```
 
 
