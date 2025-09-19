@@ -79,11 +79,18 @@ Now, convert variables to numeric values.
 logicnum <- as.numeric(problem2_df |> pull(logic))    # logical -> numeric (TRUE=1, FALSE=0)
 charnum  <- as.numeric(problem2_df |> pull(char))  # character -> numeric, produces NA + warning
 facnum   <- as.numeric(problem2_df |> pull(fac))    # factor -> numeric (uses internal integer codes)
+```
 
+```{r include=FALSE}
 mean(logicnum) #works
 mean(charnum) #error
 mean(facnum)   #works
 ```
+
+
+What happens, and why? Does this help explain what happens when you try to take the mean?
+
+
 
 
 
