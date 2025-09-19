@@ -74,6 +74,20 @@ Logic works because TRUE converts to 1 and FALSE converts to 0.
 
 Now, convert variables to numeric values.
 
+```{r}
+# Convert to numeric by pulling from the tibble
+logicnum <- as.numeric(problem2_df |> pull(logic))    # logical -> numeric (TRUE=1, FALSE=0)
+charnum  <- as.numeric(problem2_df |> pull(char))  # character -> numeric, produces NA + warning
+facnum   <- as.numeric(problem2_df |> pull(fac))    # factor -> numeric (uses internal integer codes)
+
+mean(logicnum) #works
+mean(charnum) #error
+mean(facnum)   #works
+```
+
+
+
+
 
 
 
