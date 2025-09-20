@@ -90,6 +90,8 @@ mean(facnum)   #works
 
 What happens, and why? Does this help explain what happens when you try to take the mean?
 
+When converting variables with as.numeric(), logical values become 0 or 1, so the mean represents the proportion of TRUEs or 1s. Characters cannot be meaningfully coerced, so all values become NA and the mean fails. Factors are stored as integer codes, so a mean can be calculated, but it only reflects the arbitrary coding of categories rather than anything meaningful about the data.
+
 
 
 
