@@ -44,7 +44,7 @@ ggsave("temp_vs_time_scatterplot.png") #saving scatterplot into project director
 ```
 
 Description of patterns in scatterplot:
-The scatterplot shows temperature changes over time in January, with color indicating humidity. Overall, temperatures fluctuate daily but gradually increase from early to mid-January, starting mostly between 25–40°F through Jan 7th and more frequently rising to 45–55°F closer to January 14. 
+The scatterplot shows temperature changes over time in January, with color indicating humidity. Overall, temperatures fluctuate daily but gradually increase from early to mid-January, starting mostly between 25–40°F through Jan 7th and more frequently rising to 45–55°F closer to January 14. As for daily trends, temperatures rise during the day and fall during night time, which means that humidity is higher during the day as well.
 
 Humidity increases with  warmer temperatures and spikes in mid-January when temperatures peak. Lower humidity values are more evenly spread and more common at cooler temperatures. 
 
